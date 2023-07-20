@@ -1,7 +1,7 @@
 # OcCI - OVHcloud Cloud Inventory
 
-<p align="center">
-<img src="assets/img/name.logo.png" alt="OVHcloud Cloud Inventory logo" title="occi logo" />
+<p align="left">
+<img src="assets/img/occi.jpg" alt="OVHcloud Cloud Inventory logo" title="occi logo" />
 </p>
 
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://pkg.go.dev/github.com/davidaparicio/occi)
@@ -54,16 +54,18 @@ To get started with the OVHcloud Cloud Inventory project, follow the instruction
 ### Standard setup
 1. Get the latest [OcCI release](https://github.com/davidaparicio/occi/releases)
 
-2. Edit the app.env file with your credentials
+2. Edit the [app.env](#usage) file with your credentials
 
 3. Give the execution rights
 ```bash
 chmod +x occi
 ```
-3.  Double click to run it (or if you want, move it into your PATH)
+
+4.  Double click to run it (or if you want, move it into your PATH)
 ```bash
 ./occi
 ```
+
 ### Developer mode
 1. Clone the repository:
 
