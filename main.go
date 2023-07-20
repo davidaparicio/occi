@@ -11,6 +11,7 @@ import (
 
 const (
 	EXIT_NOCONF_FILE = iota + 1
+	EXIT_UNKNOWN_ERR
 )
 
 // PartialMe holds the first name of the currently logged-in user.
@@ -48,7 +49,7 @@ func main() {
 	util.PrintAssets("/cloud/project", "PCI projects", c)
 	util.PrintAssets("/cluster/hadoop", "Hadoop clusters", c)
 	util.PrintAssets("/dbaas/logs", "DBAAS logs", c)
-	fmt.Println("=== DEDICATED ===")
+	util.PrintTitle("decicated")
 	util.PrintAssets("/dedicated/ceph", "-Ceph", c)
 	util.PrintAssets("/dedicated/housing", "-Housing", c)
 	util.PrintAssets("/dedicated/installationTemplate", "-Template", c)
@@ -57,7 +58,7 @@ func main() {
 	//util.PrintAssets("/dedicated/nvmeof ", "-NVMeoF clusters", c) //:OVHcloud API error (status code 404): Client::NotFound: "Got an invalid (or empty) URL"
 	util.PrintAssets("/dedicated/server", "-Servers", c)
 	util.PrintAssets("/dedicatedCloud", "-VMware", c)
-	fmt.Println("======")
+	util.PrintEndSection()
 	util.PrintAssets("/domain", "Domains", c)
 	util.PrintAssets("/email/domain", "Email Domains", c)
 	util.PrintAssets("/email/exchange", "Email Exchange", c)
@@ -83,7 +84,7 @@ func main() {
 	util.PrintAssets("/license/virtuozzo", "+Virtuozzo", c)
 	util.PrintAssets("/license/windows", "+Windows", c)
 	util.PrintAssets("/license/worklight", "+Worklight", c)
-	fmt.Println("======")
+	util.PrintEndSection()
 	util.PrintAssets("/metrics", "Metrics", c)
 	util.PrintAssets("/msServices", "msServices", c)
 	util.PrintAssets("/nutanix", "Nutanix clusters", c)
@@ -106,17 +107,17 @@ func main() {
 	util.PrintAssets("/webPaaS/subscription", "WebPaaS", c)
 	util.PrintAssets("/xdsl", "xDSL", c)
 
-	fmt.Println("=== SERVICE ===")
+	util.PrintTitle("SERVICE")
 	util.PrintService("Service", c)
-	fmt.Println("======")
+	util.PrintEndSection()
 
-	fmt.Println("=== SERVICES ===")
+	util.PrintTitle("SERVICES")
 	util.PrintService("Service", c)
-	fmt.Println("======")
+	util.PrintEndSection()
 
-	fmt.Println("=== PCI (Public Cloud) ===")
+	util.PrintTitle("PCI (Public Cloud)")
 	util.PrintPCI(c)
-	fmt.Println("======")
+	util.PrintEndSection()
 
 	/*fmt.Println("=== PCC (Private Cloud) ===")
 	util.PrintPCC(c)
