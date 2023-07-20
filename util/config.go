@@ -12,7 +12,7 @@ import (
 
 type Config struct {
 	Endpoint           string `mapstructure:"ENDPOINT"`
-	Application_Key    string `mapstructure:"APPLICATION_KEY`
+	Application_Key    string `mapstructure:"APPLICATION_KEY"`
 	Application_Secret string `mapstructure:"APPLICATION_SECRET"`
 	Consumer_Key       string `mapstructure:"CONSUMER_KEY"`
 	//Sleep_Time_Millisecond int    `mapstructure:"SLEEP_TIME_MS"`
