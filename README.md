@@ -128,6 +128,9 @@ Works on my machine - and yours ! Spin up pre-configured, standardized dev envir
 
 ## See also
 
+* [OVHcloud API Console](https://api.ovh.com/) and try the new version/interface [here](https://api.ovh.com/console-preview/)
+
+Interesting projects:
 * [select * from cloud; (SteamPipe.io)](https://steampipe.io)
 
 Some "old" [Github projects](https://github.com/topics/occi) with the same projectname:
